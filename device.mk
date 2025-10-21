@@ -53,6 +53,11 @@ PRODUCT_COPY_FILES += \
 # Camera
 $(call soong_config_set,camera,override_format_from_reserved,true)
 
+# libmegface
+PRODUCT_PACKAGES += \
+    libMegviiFacepp-0.5.2 \
+    libmegface
+
 # Device fstab
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -61,6 +66,11 @@ PRODUCT_PACKAGES += \
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.target.rc
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    com.fingerprints.extension@1.0.vendor \
+    vendor.goodix.hardware.fingerprintextension@1.0.vendor
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -87,6 +97,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     com.android.nfc_extras \
+    libchrome.vendor \
     Tag
 
 PRODUCT_COPY_FILES += \
