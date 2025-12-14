@@ -32,8 +32,8 @@ on fs
     chmod 644 /persist/audio/us_manual_cal
 
 on boot
-    chown gps system /sys/devices/platform/soc/890000.spi/spi_master/spi32766/spi32766.0/nstandby
-    chmod 0774 /sys/devices/platform/soc/890000.spi/spi_master/spi32766/spi32766.0/nstandby
+    chown gps system /sys/devices/platform/soc/890000.spi/spi_master/spi1/spi1.0/nstandby
+    chmod 0774 /sys/devices/platform/soc/890000.spi/spi_master/spi1/spi1.0/nstandby
     chown gps system /dev/bbd_control
     chmod 0774 /dev/bbd_control
     chown gps system /dev/bbd_patch
